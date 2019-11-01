@@ -21,7 +21,7 @@ class UseCompute{
 public class LV1{
     public static void main(String[] agrs){
         UseCompute.useCom(new Add(),1,10);
-        UseCompute.useCom(new Sub(),2,1);
+        UseCompute.useCom(new Sub(),2,10);
 
     }
 }
