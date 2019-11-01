@@ -1,26 +1,26 @@
 //简单加减法计算；
-interface IComputer{
+interface Computer{
     int computer(int n,int m);
 }
-class Add implements IComputer{
+class Add implements Computer{
     public int computer(int n, int m) {
         return n + m;
     }
 }
-class Sub implements IComputer{
+class Sub implements Computer{
     public int computer(int n, int m) {
         return n - m;
     }
 }
 class UseCompute{
-    public static void useCom(IComputer com, int one,int two){
+    public static void useCom(Computer com, int one,int two){
         int result = com.computer(one,two);
         System.out.println(result);
     }
 }
 public class LV1{
     public static void main(String[] agrs){
-        UseCompute.useCom(new Add(),1,2);
+        UseCompute.useCom(new Add(),1,10);
         UseCompute.useCom(new Sub(),2,1);
 
     }
